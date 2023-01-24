@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>GameMania</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="d:\senai\gameMania\css\style.css">
+    <script src="js/jquery.js" defer></script>
+</head>
+
+<body>
+    <header>         
+        <div class="bloco1 cabecalho">
+            <!--logo-->
+            <a href="#"><img class="logo" src="d:\senai\gameMania\imagens\gameManiaLogo.png" alt="logo gameMania"></a>
+            <!--menu-->
+            <nav id="menu" class="menu_cabecalho">
+                <a href="#" target="_blank">Início</a>
+                <a href="produtos.html" target="_blank">Produtos</a>
+                <a href="cadastro.html" target="_blank">Cadastro</a>
+                <a href="login.html" target="_blank">Login</a>
+            </nav>
+
+            <!--redes sociais e carrinho de compras-->
+            <nav class="redesSociais_cabecalho">
+                <a href="#" target="_blank"><img class="facebook" src="d:\senai\gameMania\imagens\facebook.png" alt="logo facebook"></a>
+                <a href="#" target="_blank"><img class="linkedin" src="d:\senai\gameMania\imagens\linkedin.png" alt="logo linkedin"></a>
+                <a href="#" target="_blank"><img class="twitter" src="d:\senai\gameMania\imagens\twitter.png" alt="logo twitter"></a>
+                <a href="#" target="_blank"><img class="tumblr" src="d:\senai\gameMania\imagens\tumblr.png" alt="logo tumblr"></a>
+                <a href="#" target="_blank"><img class="carrinho" src="d:\senai\gameMania\imagens\carrinho.png" alt="logo carrinho de compras"></a>
+                <!--<a href="#" id="hamburguer" onclick="abrir()"><img class="hamburguer" src="d:/senai/gameMania/imagens/menuHamburguer.png"></a>-->
+                <a href="#" id="hamburguer"><img class="hamburguer" src="d:/senai/gameMania/imagens/menuHamburguer.png"></a>
+            </nav>
+            
+        </div><!--fim do cabeçalho-->
+        <div id="popup" class="popup">  
+            <ul>
+                <li>PRODUTOS</li>
+                <li>CADASTRO</li>
+                <li>LOGIN</li>
+            </ul>          
+        </div>
+    </header>
+
+    <main>
+        <section class="secao1_main">
+            <div class="slogan_main">
+                <h3>Quando seus maiores esforços forem ignorados e seus menores erros forem julgados, vá além do
+                    impossível</h3>
+            </div><!--fim seção slogan-->
+
+            <div class="caixaPesquisa">
+                <input type="text" id="idPesquisa" placeholder="Buscar..." />
+                <a href="#" onclick="pesquisar()"><img src="d:\senai\gameMania\imagens\pesquisa.png" alt="botão pesquisar" /></a>
+            </div><!--fim seção caixa de pesquisa-->
+
+            <div class="noticias">
+                <div class="noticia1">
+                    <h3>Os melhores games:</h3>
+                    <ul>
+                        <li>Game Of Thrones</li>
+                        <li>LostArk</li>
+                        <li>Call Of Dutty</li>
+                        <li>e muito mais...</li>
+                    </ul>
+                </div>
+                <div class="noticia2">
+                    <h3>Jogue offline.</h3>
+                    <p>Todos os jogos em português dublado e legendados com downloads gratuitos</p>
+                </div>
+                <div class="noticia3">
+                    <h3>Novidade:</h3>
+                    <ul>
+                        <li>Desktop</li>
+                        <li>Android</li>
+                        <li>IPhone</li>
+                        <li>XBox</li>
+                    </ul>
+                </div>
+            </div><!--fim seção notícias-->
+
+            <section id="carousel">
+                <div class="container-fluid">
+                    <div class="row">
+                        <!--INDICADORES-->
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                            </ol>
+                            <!--INVÓLUCRO PARA SLIDES-->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="d:\senai\gameMania\imagens\cadeira3.png" alt="cadeira gamer"> 
+                                    <div class="carousel-caption">
+                                        <h5>promoção</h5>
+                                    </div>
+                                </div>    
+                                <div class="carousel-item">
+                                    <img src="d:\senai\gameMania\imagens\dvdJogos2.png" alt="dvd de jogos"> 
+                                    <div class="carousel-caption">
+                                        <h5>promoção</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="d:\senai\gameMania\imagens\oculosRVirtual.png" alt="óculos realidade virtual">
+                                    <div class="carousel-caption">
+                                        <h5>promoção</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="d:\senai\gameMania\imagens\ps5.png" alt="console ps5">
+                                    <div class="carousel-caption">
+                                        <h5>promoção</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--CONTROLES-->
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Anterior</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Próximo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section><!--fim seção carousel-->
+        </section><!--fim seção 1 página inicial-->
+
+        <section class="divisoria">            
+        </section><!--divisória para seção 2-->
+
+        <section class="secao2_main">            
+            <div class="conteudo_imagens">
+                <a href="#"><img src="d:/senai/gameMania/imagens/usuario.png" alt="imagem  usuário"></a>
+                <a href="#"><img src="d:/senai/gameMania/imagens/carros.png" alt="imagem carros corrida"></a>
+                <a href="#"><img src="d:/senai/gameMania/imagens/servidor.png" alt="imagem servidor"></a>
+            </div><!--fim imagens do conteúdo-->
+
+            <div class="textos_explicativos">
+                <h3>Separamos uma lista de 50 jogos gratuitos para baixar para usuários que procuram novas experiências sem investir dinheiro</h3>
+                <h3>Alta cadência, jogos multiplayer, rapidez nas respostas processadas independente da localização geográfica do jogador</h3>
+                <h3>Servidores de última geração, mais poder de processamento, alta taxa de transferência compensando o LAG do lado cliente</h3>
+            </div><!--fim textos explicativos-->
+
+            <!-- carousel para responsividade-->
+            <!-- invisível para resolução acima de 767px-->
+            <section id="carousel2">
+                <div class="container-fluid">
+                    <div class="row">
+                        <!--INDICADORES-->
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <!--INVÓLUCRO PARA SLIDES-->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="d:\senai\gameMania\imagens\usuario.png" alt="usuario"> 
+                                    <div class="carousel-caption">
+                                        <h5>Separamos uma lista de 50 jogos gratuitos para baixar para usuários que procuram novas experiências sem investir dinheiro</h5>
+                                    </div>
+                                </div>    
+                                <div class="carousel-item">
+                                    <img src="d:\senai\gameMania\imagens\carros.png" alt="carros de corrida"> 
+                                    <div class="carousel-caption">
+                                        <h5>Alta cadência, jogos multiplayer, rapidez nas respostas processadas independente da localização geográfica do jogador</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="d:\senai\gameMania\imagens\servidor.png" alt="servidor">
+                                    <div class="carousel-caption">
+                                        <h5>Servidores de última geração, mais poder de processamento, alta taxa de transferência compensando o LAG do lado cliente</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--CONTROLES-->
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Anterior</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Próximo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section><!--fim seção carousel2-->            
+        </section>
+
+        <section class="divisoria">
+        </section><!--divisória para rodapé--> 
+    </main>
+
+    <footer>
+        <section class="rodape">
+            <div class="logo_rodape">
+                <!--logo gameMania rodapé-->
+                <a href="#"><img src="d:/senai/gameMania/imagens/gameManiaLogo.png"></a>
+                <p>por Nathalie Maria</p>
+                <div class="seletorLinguas">
+                    <!--<a href="#">português  ></a>-->
+                    <select id="idiomas">
+                        <option id="port">português</option>
+                        <option id="esp">espanhol</option>
+                        <option id="ing">inglês</option>
+                        <option id="fran">francês</option>
+                    </select>
+                </div>
+            </div>          
+            <div class="saibaMais_rodape">
+                <h2>saiba mais</h2>
+                <p><a href="#">planos e preços</a></p>
+                <p><a href="#">promoções</a></p>
+                <p><a href="#">plugins e aplicações</a></p>
+                <p><a href="#">informações sobre licenças</a></p>
+                <p><a href="#">privacidade</a></p>
+                <p><a href="#">segurança</a></p>
+            </div>
+            <div class="empresa_rodape">
+                <h2>empresa</h2>
+                <p><a href="#">quem somos</a></p>
+                <p><a href="#">imprensa</a></p>
+                <p><a href="#">trabalhe conosco</a></p>
+                <p><a href="#">afiliados</a></p>
+            </div>
+            <div class="apoio_rodape">
+                
+            </div>
+            <div class="redesSociais_rodape">
+                <h2>baixe o aplicativo</h2>
+                <p><a href="#"><img src="d:/senai/gameMania/imagens/appStore.png" alt="acesso app store"></a></p>
+                <p><a href="#"><img src="d:/senai/gameMania/imagens/googlePlayStore.png" alt="acesso play store"></a></p>
+            </div>            
+        </section>
+        <section class="endereco_rodape">
+            <div class="final">
+                <p>Rua dos Sites Responsivos, 123 - Bairro Renderizado - Pernambuco - CEP 12.345-678 - (81)9.9999.9999</p>
+            </div>
+        </section>
+    </footer>
+    <!-- plugins jquery bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

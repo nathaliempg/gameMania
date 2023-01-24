@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+/*CSS Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: black; 
+    height: 80px;
+}   
+
+main{
+    font-family: roboto;
+}
+
+/*cabeçalho*/
+.bloco1{
+    width: 1400px;
+    margin: auto;     
+}
+
+.cabecalho{
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.cabecalho a:hover{
+    transform: scale(1.1);
+}
+
+.facebook, .linkedin, .twitter, .tumblr, .carrinho{
+    width: 40px;
+}
+
+.menu_cabecalho{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_cabecalho a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.redesSociais_cabecalho{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hamburguer{
+   /* display: none;*/
+}
+
+.popup{
+    position: fixed;
+    left: 1470px;
+    margin: auto;
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+    border: solid 1px;
+    background-color: cadetblue;
+    display: none;
+}
+
+/*início seção 1 main*/
+.secao1_main{
+    height: 900px;
+    background-image: url(../imagens/controleJogos.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.slogan_main{
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slogan_main h3{
+    margin-top: 25px;    
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+}
+
+.caixaPesquisa{    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.caixaPesquisa input{
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    width: 500px;
+    font-size: 15px;
+    height: 35px;
+    padding: 5px;
+}
+
+.caixaPesquisa img{
+    width: 34px;
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;    
+}
+
+.caixaPesquisa a:hover{
+    transform: scale(1.1);
+}
+
+.noticias{
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 900px;
+    margin-left: 290px;
+}
+
+.noticia1{
+    width: 250px;
+}
+
+.noticia2{
+    width: 250px;
+}
+
+.noticia3{
+    width: 80px;
+}
+
+#carousel{
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-left: 585px;
+    border: 2px solid white;
+    width: 300px;
+    height: 350px;
+    padding: 10px;
+}
+
+.carousel-inner img{
+    width: 290px;
+    height: 320px;
+    object-fit: contain;
+}
+
+/*divisória para seção 2 main*/
+.divisoria{
+    background-image: url(c:/senai/gameMania/imagens/divisoria.png);
+    width: 100%;
+    height: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*início seção 2 main*/
+/*imagens*/
+.secao2_main{
+    background-image: url(c:/senai/gameMania/imagens/joystick.jpg);
+    height: 900px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.conteudo_imagens{
+    padding: 20px;   
+    padding-top: 100px; 
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.conteudo_imagens a img{
+    width: 360px;
+    height: 450px;
+}
+
+.conteudo_imagens a:hover{
+    transform: scale(1.1);
+}
+
+/*textos explicativos*/
+.textos_explicativos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 110px;
+    padding-right: 120px;
+    color: white;
+}
+
+.textos_explicativos h3{
+    width: 300px;
+    text-align: center;
+    align-content: space-between;
+}
+
+#carousel2{
+    display: none;
+}
+
+/*divisória para rodapé*/
+.divisoria{
+    background-image: url(c:/senai/gameMania/imagens/divisoria.png);
+    width: 100%;
+    height: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*início seção rodapé*/
+.rodape{
+    background-image: url(c:/senai/gameMania/imagens/banner.png);
+    height: 680px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 170px;    
+}
+
+.rodape a{
+    text-decoration: none;
+    color: white;
+}
+
+.rodape a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+.rodape h2{
+    font-weight: bold;
+}
+
+.logo_rodape{
+    padding-left: 30px;
+}
+.logo_rodape img{
+    width: 150px;
+}
+
+.logo_rodape p{
+    color: white;
+    font-size: 20px;
+    padding-bottom: 35px;/*afasta seletorLinguas*/
+}
+
+.seletorLinguas a{
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 5px; 
+    padding: 8px;
+}
+
+#idiomas{
+    color:black;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: transparent;
+    border:  2px solid white;
+    padding: 8px;
+}
+
+.saibaMais_rodape{
+    width: 200px;
+    color: white;
+    font-size: 20px;
+}
+
+.empresa_rodape{
+    width: 200px;
+    color: white;
+    font-size: 20px;
+}
+
+.apoio_rodape{
+    width: 200px;
+    color: white;
+    font-size: 20px;
+}
+
+.redesSociais_rodape{
+    color: white;
+}
+
+.redesSociais_rodape img{
+    width: 250px;    
+}
+
+.redesSociais_rodape a:hover img{
+    transform: scale(1.1);
+}
+
+.endereco_rodape{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.final{
+    color: white;
+}
+
+/*responsividade
+    max-width:767px - smartphone
+    min-width:768px max-width:1023px - tablet
+    min-width:1024px - desktop/notebook
+*/
+@media screen and (max-width: 767px){
+    .bloco1{width: 767px; justify-content: center;}
+    .secao1_main{width: 767px; height: 60%;}
+    .secao2_main{width: 767px; display:flex; justify-content: center;}
+    .rodape{width: 767px; height:650px; display: flex; justify-content: center;flex-direction: column; padding-top: 5px; padding-left: 60px;}
+    .endereco_rodape{width: 767px; justify-content: center; font-size: 10px;}
+    /*#header{width: 767px;}
+    #main{width:767px}
+    #footer{width: 767px;}*/    
+    .logo{ width: 150px; }
+    .cabecalho{
+        position: relative;
+    }
+    .menu_cabecalho{ 
+        position:absolute; 
+        top: 80px;
+        left: 590px;
+        padding: 10px;
+        width: 140px;
+        display: none; 
+        flex-direction: column;
+        background-color: black;
+    }
+    .slogan_main{ display: none; }
+    .hamburguer{ display: inline-block; width: 60px;}
+    .menu-ativo{ display: flex; }
+    .redesSociais_cabecalho{ width: 50%; }
+    .noticias{ margin-left:0px; align-items: center; flex-direction: column; }
+    .carousel{ margin-left: 0px; display: flex; justify-content: center;}    
+    .conteudo_imagens{display: none;}
+    .textos_explicativos{display: none;}
+    #carousel2{display: inline-block; justify-content: center;}
+    .saibaMais_rodape{font-size: 10px; line-height: 0.3; padding-top: 45px;}
+    .saibaMais_rodape h2{font-size: 12px;}
+    .empresa_rodape{font-size: 10px; line-height: 0.3;}
+    .empresa_rodape h2{font-size: 12px;}
+    .apoio_rodape{font-size: 10px; line-height: 0.3;}
+    .apoio_rodape h2{font-size: 12px;}
+    .redesSociais_rodape h2{font-size: 12px;}
+    .redesSociais_rodape img{width: 100px;}
+    .seletorLinguas a{margin-top: 5px;}
+    .logo_rodape{padding-left: 0px;}
+}
+
+@media screen and (min-width:768px) and (max-width:1023px){
+    .secao2_main{ height: 60%; }
+}
+
+@media screen and(max-width:1024px) {
+    .rodape{ height: 60%; align-items: center; flex-direction: column; }
+}
